@@ -1,0 +1,15 @@
+{
+  "name": "coq-prover",
+  "version": "0.1.0",
+  "description": "LLM-powered Coq proof generator with coqc feedback loop",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "@types/node": "^20",
+    "jscoq": "^0.17.1",
+    "ts-node": "^10.9",
+    "typescript": "^5.4"
+  }
+}

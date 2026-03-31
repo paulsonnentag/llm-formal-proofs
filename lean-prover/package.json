@@ -1,0 +1,14 @@
+{
+  "name": "lean-prover",
+  "version": "0.1.0",
+  "description": "LLM-powered Lean 4 proof generator with feedback loop",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "typescript": "^5.4",
+    "ts-node": "^10.9",
+    "@types/node": "^20"
+  }
+}
