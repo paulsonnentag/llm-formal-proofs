@@ -1,6 +1,6 @@
 import { readFileSync, writeFileSync } from "fs";
 import { generateProof, chatWithTools, getAgenticTools, Message, SYSTEM_PROMPT_AGENTIC } from "./llm";
-import { check } from "./leancheck";
+import { check } from "./leancheck-wasm";
 import { parseSpec, assembleProvenFile, Theorem } from "./parser";
 import { executeToolCall, ProofState } from "./tools";
 

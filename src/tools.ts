@@ -1,4 +1,4 @@
-import { check, CheckResult } from "./leancheck";
+import { check, CheckResult } from "./leancheck-wasm";
 
 export interface ToolDefinition {
   type: "function";
