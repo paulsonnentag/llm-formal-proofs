@@ -1,0 +1,4 @@
+# Lean 4 WASM binaries (large, download separately)
+lean-*-linux_wasm32/
+*.tar.zst
+*.tar
