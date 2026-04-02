@@ -1,0 +1,139 @@
+DIGEST 236885b2349c0d88201bf6031a87e221
+FSchedulerFull
+R74:78 Stdlib.Arith.Arith <> <> lib
+R108:110 Stdlib.micromega.Lia <> <> lib
+def 125:128 <> Time
+R133:135 Corelib.Init.Datatypes <> nat ind
+rec 146:148 <> Job
+proj 163:169 <> release
+proj 181:188 <> deadline
+proj 200:203 <> cost
+R173:176 SchedulerFull <> Time def
+R192:195 SchedulerFull <> Time def
+R207:210 SchedulerFull <> Time def
+def 227:234 <> Schedule
+R243:246 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R239:242 SchedulerFull <> Time def
+R247:252 Corelib.Init.Datatypes <> option ind
+R254:256 SchedulerFull <> Job rec
+def 327:333 <> service
+R344:351 SchedulerFull <> Schedule def
+binder 336:340 <> sched:5
+R359:361 SchedulerFull <> Job rec
+binder 355:355 <> j:6
+R369:372 SchedulerFull <> Time def
+binder 365:365 <> t:7
+R377:379 Corelib.Init.Datatypes <> nat ind
+R392:392 SchedulerFull <> t:7 var
+R414:414 Corelib.Init.Datatypes <> S constr
+R440:448 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R422:428 SchedulerFull <> service:8 def
+R436:436 SchedulerFull <> j:6 var
+R430:434 SchedulerFull <> sched:5 var
+R455:459 SchedulerFull <> sched:5 var
+R477:480 Corelib.Init.Datatypes <> Some constr
+R491:497 Stdlib.Arith.PeanoNat Nat eqb def
+R500:507 SchedulerFull <> deadline proj
+R514:521 SchedulerFull <> deadline proj
+R523:523 SchedulerFull <> j:6 var
+R548:551 Corelib.Init.Datatypes <> None constr
+def 633:644 <> completed_by
+R655:662 SchedulerFull <> Schedule def
+binder 647:651 <> sched:10
+R670:672 SchedulerFull <> Job rec
+binder 666:666 <> j:11
+R680:683 SchedulerFull <> Time def
+binder 676:676 <> t:12
+R715:718 Corelib.Init.Peano <> ::nat_scope:x_'>='_x not
+R698:704 SchedulerFull <> service def
+R706:710 SchedulerFull <> sched:10 var
+R712:712 SchedulerFull <> j:11 var
+R714:714 SchedulerFull <> t:12 var
+R719:722 SchedulerFull <> cost proj
+R724:724 SchedulerFull <> j:11 var
+def 800:813 <> meets_deadline
+R824:831 SchedulerFull <> Schedule def
+binder 816:820 <> sched:13
+R839:841 SchedulerFull <> Job rec
+binder 835:835 <> j:14
+R856:867 SchedulerFull <> completed_by def
+R869:873 SchedulerFull <> sched:13 var
+R875:875 SchedulerFull <> j:14 var
+R878:885 SchedulerFull <> deadline proj
+R887:887 SchedulerFull <> j:14 var
+prf 947:958 <> service_zero
+binder 969:973 <> sched:15
+binder 975:975 <> j:16
+R995:997 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R978:984 SchedulerFull <> service def
+R986:990 SchedulerFull <> sched:15 var
+R992:992 SchedulerFull <> j:16 var
+prf 1123:1134 <> service_mono
+binder 1145:1149 <> sched:17
+binder 1151:1151 <> j:18
+binder 1153:1153 <> t:19
+R1173:1176 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R1156:1162 SchedulerFull <> service def
+R1164:1168 SchedulerFull <> sched:17 var
+R1170:1170 SchedulerFull <> j:18 var
+R1172:1172 SchedulerFull <> t:19 var
+R1177:1183 SchedulerFull <> service def
+R1185:1189 SchedulerFull <> sched:17 var
+R1191:1191 SchedulerFull <> j:18 var
+R1194:1194 Corelib.Init.Datatypes <> S constr
+R1196:1196 SchedulerFull <> t:19 var
+prf 1311:1326 <> service_le_of_le
+binder 1337:1341 <> sched:20
+binder 1343:1343 <> j:21
+binder 1345:1346 <> t1:22
+binder 1348:1349 <> t2:23
+R1363:1366 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1357:1360 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R1355:1356 SchedulerFull <> t1:22 var
+R1361:1362 SchedulerFull <> t2:23 var
+R1385:1388 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R1367:1373 SchedulerFull <> service def
+R1375:1379 SchedulerFull <> sched:20 var
+R1381:1381 SchedulerFull <> j:21 var
+R1383:1384 SchedulerFull <> t1:22 var
+R1389:1395 SchedulerFull <> service def
+R1397:1401 SchedulerFull <> sched:20 var
+R1403:1403 SchedulerFull <> j:21 var
+R1405:1406 SchedulerFull <> t2:23 var
+R1514:1525 Stdlib.Arith.Compare_dec <> le_lt_eq_dec def
+R1531:1531 Corelib.Init.Datatypes <> S constr
+R1514:1525 Stdlib.Arith.Compare_dec <> le_lt_eq_dec def
+R1531:1531 Corelib.Init.Datatypes <> S constr
+R1568:1573 Corelib.Init.Peano <> le_S_n thm
+R1568:1573 Corelib.Init.Peano <> le_S_n thm
+R1614:1620 SchedulerFull <> service def
+R1595:1606 Stdlib.Arith.PeanoNat Nat le_trans thm
+R1614:1620 SchedulerFull <> service def
+R1595:1606 Stdlib.Arith.PeanoNat Nat le_trans thm
+R1678:1689 SchedulerFull <> service_mono thm
+R1678:1689 SchedulerFull <> service_mono thm
+prf 1813:1829 <> completion_stable
+binder 1840:1844 <> sched:24
+binder 1846:1846 <> j:25
+binder 1848:1849 <> t1:26
+binder 1851:1852 <> t2:27
+R1865:1868 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1859:1862 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R1857:1858 SchedulerFull <> t1:26 var
+R1863:1864 SchedulerFull <> t2:27 var
+R1892:1895 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1869:1880 SchedulerFull <> completed_by def
+R1882:1886 SchedulerFull <> sched:24 var
+R1888:1888 SchedulerFull <> j:25 var
+R1890:1891 SchedulerFull <> t1:26 var
+R1896:1907 SchedulerFull <> completed_by def
+R1909:1913 SchedulerFull <> sched:24 var
+R1915:1915 SchedulerFull <> j:25 var
+R1917:1918 SchedulerFull <> t2:27 var
+R1971:1982 SchedulerFull <> completed_by def
+R2017:2023 SchedulerFull <> service def
+R1998:2009 Stdlib.Arith.PeanoNat Nat le_trans thm
+R2017:2023 SchedulerFull <> service def
+R1998:2009 Stdlib.Arith.PeanoNat Nat le_trans thm
+R2065:2080 SchedulerFull <> service_le_of_le thm
+R2065:2080 SchedulerFull <> service_le_of_le thm
